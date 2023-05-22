@@ -1,43 +1,33 @@
 public class Node {
-    Node left;
-    Node right;
-    int value;
+    private Node left;
+    private Node right;
+    private int value;
 
     public Node(int value) {
         this.value = value;
     }
 
-    void recPreOrder() {
-        treatment();
-        if (left != null) {
-            left.recPreOrder();
-        }
-        if (right != null) {
-            right.recPreOrder();
-        }
+    public Node getLeft() {
+        return left;
     }
 
-    void recInOrder() {
-        if (left != null) {
-            left.recInOrder();
-        }
-        treatment();
-        if (right != null) {
-            right.recInOrder();
-        }
+    public void setLeft(Node left) {
+        this.left = left;
     }
 
-    void recPostOrder() {
-        if (left != null) {
-            left.recPostOrder();
-        }
-        if (right != null) {
-            right.recPostOrder();
-        }
-        treatment();
+    public Node getRight() {
+        return right;
     }
 
-    private void treatment() {
-        System.out.println(this.value);
+    public void setRight(Node right) {
+        this.right = right;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
     }
 }

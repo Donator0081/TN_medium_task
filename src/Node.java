@@ -9,19 +9,31 @@ public class Node {
 
     void recPreOrder() {
         treatment();
-        if (left != null) left.recPreOrder();
-        if (right != null) right.recPreOrder();
+        if (left != null) {
+            left.recPreOrder();
+        }
+        if (right != null) {
+            right.recPreOrder();
+        }
     }
 
     void recInOrder() {
-        if (left != null) left.recInOrder();
+        if (left != null) {
+            left.recInOrder();
+        }
         treatment();
-        if (right != null) right.recInOrder();
+        if (right != null) {
+            right.recInOrder();
+        }
     }
 
     void recPostOrder() {
-        if (left != null) left.recPostOrder();
-        if (right != null) right.recPostOrder();
+        if (left != null) {
+            left.recPostOrder();
+        }
+        if (right != null) {
+            right.recPostOrder();
+        }
         treatment();
     }
 

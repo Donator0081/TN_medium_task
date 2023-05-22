@@ -4,6 +4,7 @@ public class Main {
     }
 
     private static void printTestResults() {
+        TreeTraversal traversal = new TreeTraversal();
         Node node1 = new Node(80);
         Node node2 = new Node(30);
         Node node3 = new Node(120);
@@ -18,12 +19,12 @@ public class Main {
         node3.setLeft(node6);
         node3.setRight(node7);
         System.out.println("preOrder()");
-        TreeTraversal.recPreOrder(node1);
+        traversal.recPreOrder(node1);
         System.out.println("----------");
         System.out.println("inOrder()");
-        TreeTraversal.recInOrder(node1);
+        traversal.recInOrder(node1);
         System.out.println("----------");
         System.out.println("postOrder()");
-        TreeTraversal.recPostOrder(node1);
+        traversal.recPostOrder(node1);
     }
 }

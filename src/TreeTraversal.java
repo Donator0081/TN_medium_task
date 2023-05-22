@@ -1,5 +1,5 @@
 public class TreeTraversal {
-    public static void recPreOrder(Node node) {
+    public void recPreOrder(Node node) {
         treatment(node);
         if (node.getLeft() != null) {
             recPreOrder(node.getLeft());
@@ -9,7 +9,7 @@ public class TreeTraversal {
         }
     }
 
-    public static void recInOrder(Node node) {
+    public void recInOrder(Node node) {
         if (node.getLeft() != null) {
             recInOrder(node.getLeft());
         }
@@ -19,7 +19,7 @@ public class TreeTraversal {
         }
     }
 
-    public static void recPostOrder(Node node) {
+    public void recPostOrder(Node node) {
         if (node.getLeft() != null) {
             recPostOrder(node.getLeft());
         }
@@ -29,7 +29,7 @@ public class TreeTraversal {
         treatment(node);
     }
 
-    private static void treatment(Node node) {
+    private void treatment(Node node) {
         System.out.println(node.getValue());
     }
 }

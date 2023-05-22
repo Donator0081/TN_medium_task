@@ -26,5 +26,8 @@ public class Main {
         System.out.println("----------");
         System.out.println("postOrder()");
         traversal.recPostOrder(node1);
+        System.out.println("----------");
+        System.out.println("horizontalOrder()");
+        traversal.horizontalOrder(node1);
     }
 }

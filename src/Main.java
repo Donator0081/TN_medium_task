@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
+        printTestResults();
+    }
+
+    private static void printTestResults() {
         Node node1 = new Node(80);
         Node node2 = new Node(30);
         Node node3 = new Node(120);

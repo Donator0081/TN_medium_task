@@ -2,6 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class TreeTraversal {
+
     public void recPreOrder(Node node) {
         treatment(node);
         if (node.getLeft() != null) {
@@ -50,6 +51,6 @@ public class TreeTraversal {
     }
 
     private void treatment(Node node) {
-        System.out.println(node.getValue());
+        System.out.print(node.getValue() + " ");
     }
 }

@@ -20,14 +20,15 @@ public class Main {
         node3.setRight(node7);
         System.out.println("preOrder()");
         traversal.recPreOrder(node1);
-        System.out.println("----------");
+        System.out.println();
         System.out.println("inOrder()");
         traversal.recInOrder(node1);
-        System.out.println("----------");
+        System.out.println();
         System.out.println("postOrder()");
         traversal.recPostOrder(node1);
-        System.out.println("----------");
+        System.out.println();
         System.out.println("horizontalOrder()");
         traversal.horizontalOrder(node1);
+
     }
 }
